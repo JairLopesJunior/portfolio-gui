@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './core/pages/home/home.component';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { CardComponent } from './shared/components/card/card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+nav {
+    background-color: #5E4429 !important;
+}
+
+nav > a {
+    font-family: 'Dialog';
+    font-size: 2.5rem;
+}
+
+#navbarSupportedContent {
+    margin-right: 2rem;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        margin: 10px;
+        border-bottom: 1px solid white;
+    }
+
+    .navbar-toggler {
+        margin-left: 10px;
+    }
+
+    #navbarSupportedContent {
+        margin-right: 10px !important;
+    }
+}

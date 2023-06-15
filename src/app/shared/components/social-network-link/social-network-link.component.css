@@ -1,8 +1,12 @@
-#iconsHome {
-    margin: 0;
-    position: absolute;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    bottom: -14vh;
+span {
+    width: 4.5rem;
+}
+
+.icon {
+    color: white;
+    cursor: pointer;
+}
+
+.icon:hover {
+    top: -4px;
 }

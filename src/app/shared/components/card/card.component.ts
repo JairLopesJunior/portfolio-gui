@@ -12,6 +12,8 @@ export class CardComponent implements OnInit {
   @Input() imagem: string | undefined = '';
   @Input() id: number = 0;
   @Input() qualTipo: string = '';
+  @Input() hasButton: boolean = false;
+  @Input() hasImage: boolean = false;
 
   constructor() { }
 

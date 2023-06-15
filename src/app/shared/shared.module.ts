@@ -5,12 +5,14 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from '../core/pages/home/home.component';
 import { CardComponent } from './components/card/card.component';
+import { SocialNetworkLinkComponent } from './components/social-network-link/social-network-link.component';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    CardComponent
+    CardComponent,
+    SocialNetworkLinkComponent
   ],
   imports: [
     CommonModule,
@@ -22,7 +24,8 @@ import { CardComponent } from './components/card/card.component';
   ],
   exports: [
     NavbarComponent,
-    CardComponent
+    CardComponent,
+    SocialNetworkLinkComponent
   ]
 })
 export class SharedModule { }

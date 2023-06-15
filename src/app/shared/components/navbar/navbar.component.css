@@ -13,6 +13,7 @@ a {
 
 .navbar-nav > li > a {
     margin-right: 1.5rem;
+    cursor: pointer;
 }
 
 #navbarSupportedContent {

@@ -1,11 +1,12 @@
 <div class="card h-100" style="min-height: 358px; max-height: 358px; margin: 10px !important">
-    <img style="background-size: cover; max-height: 222px; min-height: 222px;" class="card-img-top" [src]="imagem" alt="Card image cap">
+    <img *ngIf="hasImage" style="background-size: cover; max-height: 222px; min-height: 222px;" class="card-img-top" [src]="imagem" alt="Card image cap">
     <div class="card-body" align="center">
+        <ng-content></ng-content>
         <h5 class="card-title" style="width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">{{ title }}</h5>
         <p class="card-text">{{ relato }}</p>
     </div>
 
-    <button class="btn mb-3">
+    <button *ngIf="hasButton" class="btn mb-3">
         SAIBA MAIS
     </button>
 </div>

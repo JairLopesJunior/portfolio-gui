@@ -9,4 +9,5 @@ span {
 
 .icon:hover {
     top: -4px;
+    font-size: 1rem;
 }

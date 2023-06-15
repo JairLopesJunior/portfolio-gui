@@ -9,6 +9,8 @@ export class SocialNetworkLinkComponent implements OnInit {
 
   @Input() name: string;
 
+  @Input() link: string = '#';
+
   constructor() { }
 
   ngOnInit(): void {

@@ -2,8 +2,8 @@
     <img *ngIf="hasImage" style="background-size: cover; max-height: 222px; min-height: 222px;" class="card-img-top" [src]="imagem" alt="Card image cap">
     <div class="card-body" align="center">
         <ng-content></ng-content>
-        <h5 class="card-title" style="width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">{{ title }}</h5>
-        <p class="card-text">{{ relato }}</p>
+        <h5 *ngIf="!!title" class="card-title" style="width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">{{ title }}</h5>
+        <p *ngIf="!!relato" class="card-text">{{ relato }}</p>
     </div>
 
     <button *ngIf="hasButton" class="btn mb-3">

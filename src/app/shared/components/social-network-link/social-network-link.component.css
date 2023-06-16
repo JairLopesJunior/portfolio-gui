@@ -2,6 +2,10 @@ span {
     width: 4.5rem;
 }
 
+i {
+    margin: 0px;
+}
+
 .icon {
     color: white;
     cursor: pointer;

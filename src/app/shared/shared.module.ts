@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-
+import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from '../core/pages/home/home.component';
 import { CardComponent } from './components/card/card.component';
 import { SocialNetworkLinkComponent } from './components/social-network-link/social-network-link.component';
+import { PortfolioComponent } from '../core/pages/portfolio/portfolio.component';
 
 
 @NgModule({
@@ -18,7 +18,10 @@ import { SocialNetworkLinkComponent } from './components/social-network-link/soc
     CommonModule,
     RouterModule.forChild([
       {
-          path: '', component: HomeComponent
+        path: '', component: HomeComponent
+      },
+      {
+        path: 'portfolio', component: PortfolioComponent
       }
     ])
   ],

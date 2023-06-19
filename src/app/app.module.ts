@@ -9,11 +9,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { CardComponent } from './shared/components/card/card.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { SharedModule } from './shared/shared.module';
+import { PortfolioComponent } from './core/pages/portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

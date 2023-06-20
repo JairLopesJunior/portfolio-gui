@@ -14,6 +14,8 @@ export class CardComponent implements OnInit {
   @Input() qualTipo: string = '';
   @Input() hasButton: boolean = false;
   @Input() hasImage: boolean = false;
+  @Input() starNumber: number = 0;
+  @Input() forkNumber: number = 0;
 
   constructor() { }
 

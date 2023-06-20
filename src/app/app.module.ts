@@ -3,22 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './core/pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
-import { PortfolioComponent } from './core/pages/portfolio/portfolio.component';
+import { PagesModule } from './core/pages/pages.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    PortfolioComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent],

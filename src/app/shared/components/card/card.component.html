@@ -1,12 +1,28 @@
 <div class="card h-100" style="min-height: 358px; max-height: 358px; margin: 10px !important">
     <img *ngIf="hasImage" style="background-size: cover; max-height: 222px; min-height: 222px;" class="card-img-top" [src]="imagem" alt="Card image cap">
-    <div class="card-body" align="center">
-        <ng-content></ng-content>
-        <h5 *ngIf="!!title" class="card-title" style="width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">{{ title }}</h5>
-        <p *ngIf="!!relato" class="card-text">{{ relato }}</p>
+    <div class="container">
+        <div class="card-body" align="center">
+            <ng-content></ng-content>
+            <h5 *ngIf="!!title" class="card-title" style="width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">{{ title }}</h5>
+            <p *ngIf="!!relato" class="card-text">{{ relato }}</p>
+        </div>
+    
+        <div class="div-button">
+            <button *ngIf="hasButton" class="btn">
+                SAIBA MAIS
+            </button>
+    
+            <div class="div-icons">
+                <span style="margin-right: 0.5rem;">
+                    <i class="fa fa-star fa-1x"></i>
+                    <span>{{ starNumber }}</span>
+                </span>
+    
+                <span>
+                    <i class="fa fa-code-fork fa-1x"></i>
+                    <span>{{ forkNumber }}</span>
+                </span>
+            </div>
+        </div>
     </div>
-
-    <button *ngIf="hasButton" class="btn mb-3">
-        SAIBA MAIS
-    </button>
 </div>

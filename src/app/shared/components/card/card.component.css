@@ -32,3 +32,22 @@ p {
     border-color: #00B2FF; 
     color: #00B2FF;
 }
+
+.div-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    width: 7.5rem;
+}
+
+.div-icons {
+    display: flex;
+    vertical-align: middle;
+}
+
+.div-icons > span {
+    display: flex;
+    align-items: flex-end;
+}

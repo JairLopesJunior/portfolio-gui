@@ -122,6 +122,9 @@
           }
         }
       }
-    }},
-  "defaultProject": "portfolio-gui"
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
 }

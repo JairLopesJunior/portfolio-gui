@@ -26,8 +26,8 @@ p {
 }
 
 .btn {
-    background-color: #00B2FF; 
-    border-color: #00B2FF; 
+    background-color: #5E4429; 
+    border: 2px solid #B98045; 
     border-radius: 10rem; 
     color: white;
 }

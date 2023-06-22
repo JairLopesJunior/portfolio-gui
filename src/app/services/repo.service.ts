@@ -14,7 +14,10 @@ export class RepoService {
     this.URL = "https://api.github.com/users/JairLopesJunior/repos";
   }
 
-  getCityRegistered(): Observable<Repos[]> {
-    return this._httpClient.get<Repos[]>(this.URL);
+  getCityRegistered(page?: number): Observable<Repos[]> {
+    if (!page) {
+      page = 1;
+    }
+    return this._httpClient.get<Repos[]>(`${this.URL}?page=${page}&per_page=20`);
   }
 }

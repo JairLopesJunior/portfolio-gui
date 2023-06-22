@@ -2,3 +2,8 @@
     border-color: #B98045 !important;
     background-color: #B98045;
 }
+
+.card-body {
+    padding: 0px;
+    margin-bottom: 2rem;
+}

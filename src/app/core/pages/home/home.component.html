@@ -4,58 +4,60 @@
 
 <div class="row">
     <div class="col-md-6">
-        <app-card>
-            <div style="height: 100%; display: grid; place-items: center; grid-template-rows: max-content;">
-                <div style="height: 50%; margin-bottom: 0.5rem;">
-                    <div>
-                        <h1 style="font-family: 'Englebert'; color: #FCF198;">OLÁ, MEU NOME É</h1>
+        <div class="card h-100 no-border" style="min-height: 358px; max-height: 358px; margin: 10px !important">
+            <div class="card-body" align="center">
+                <div style="height: 100%; display: grid; place-items: center; grid-template-rows: max-content;">
+                    <div style="height: 50%; margin-bottom: 0.5rem;">
+                        <div>
+                            <h1 style="font-family: 'Englebert'; color: #FCF198;">OLÁ, MEU NOME É</h1>
+                        </div>
+
+                        <div>
+                            <h5 style="font-family: 'Englebert';">
+                                System
+                                <span style="color: #0029FF">
+                                    .out.
+                                </span>
+                                println(
+                                <span style="color: #146FC3">
+                                    "JAIR LOPES JUNIOR"
+                                </span>);
+                            </h5>
+                        </div>
+        
+                        <div>
+                            <h3 class="typewriter" style="color: #FCF198;">FULL-STACK / DEVELOPER</h3>
+                        </div>
+        
+                        <div>
+                            <hr align="center" width="97%" style="border: 2px solid black; margin-top: 0vh; margin-bottom: 0.5rem;" />
+                        </div>
+        
+                        <div>
+                            <h3 class="typewriter" style="color: #FCF198; word-wrap: inherit; margin-bottom: 0.5rem;">I TURN COFFEE INTO  &#123;CODE;&#125;</h3>
+                        </div>
                     </div>
-
-                    <div>
-                        <h5 style="font-family: 'Englebert';">
-                            System
-                            <span style="color: #0029FF">
-                                .out.
-                            </span>
-                            println(
-                            <span style="color: #146FC3">
-                                "JAIR LOPES JUNIOR"
-                            </span>);
-                        </h5>
+        
+                    <div style="height: 50%; text-align: center; align-items: center !important; display: flex;
+                        width: 100%; vertical-align: middle; justify-content: center;">
+                        <app-social-network-link 
+                            [name]="'github'"
+                            [link]="'https://github.com/JairLopesJunior'"
+                        ></app-social-network-link>
+        
+                        <app-social-network-link
+                            [name]="'linkedin'"
+                            [link]="'https://www.linkedin.com/in/jair-lopes-1a73211a2'"
+                        ></app-social-network-link>
+        
+                        <app-social-network-link
+                            [name]="'gitlab'"
+                            [link]="'https://gitlab.com/JairLopesJunior'"
+                        ></app-social-network-link>
                     </div>
-
-                    <div>
-                        <h3 class="typewriter" style="color: #FCF198;">FULL-STACK / DEVELOPER</h3>
-                    </div>
-
-                    <div>
-                        <hr align="center" width="97%" style="border: 2px solid black; margin-top: 0vh; margin-bottom: 0.5rem;" />
-                    </div>
-
-                    <div>
-                        <h3 class="typewriter" style="color: #FCF198; word-wrap: inherit; margin-bottom: 0.5rem;">I TURN COFFEE INTO  &#123;CODE;&#125;</h3>
-                    </div>
-                </div>
-
-                <div style="height: 50%; text-align: center; align-items: center !important; display: flex;
-                    width: 100%; vertical-align: middle; justify-content: center;">
-                    <app-social-network-link 
-                        [name]="'github'"
-                        [link]="'https://github.com/JairLopesJunior'"
-                    ></app-social-network-link>
-
-                    <app-social-network-link
-                        [name]="'linkedin'"
-                        [link]="'https://www.linkedin.com/in/jair-lopes-1a73211a2'"
-                    ></app-social-network-link>
-
-                    <app-social-network-link
-                        [name]="'gitlab'"
-                        [link]="'https://gitlab.com/JairLopesJunior'"
-                    ></app-social-network-link>
                 </div>
             </div>
-        </app-card>
+        </div>
     </div>
 
     <div class="col-md-6">

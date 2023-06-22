@@ -2,8 +2,15 @@
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+html,
+body {
+    height: 100% !important; 
+}
+
 body {
     background-color: #5E4429;
-    border: 0.5rem solid;
-    border-color: #B98045;
+    border-top: 0.5rem solid #B98045;
+    border-right: 0.5rem solid #B98045;
+    border-left: 0.5rem solid #B98045;
+    border-bottom: 0px;
 }

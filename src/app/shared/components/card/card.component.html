@@ -1,4 +1,4 @@
-<div class="card h-100" style="min-height: 358px; max-height: 358px; margin: 10px !important">
+<div class="card h-100 no-border" style="min-height: 358px; max-height: 358px; margin: 10px !important">
     <img *ngIf="hasImage" style="background-size: cover; max-height: 222px; min-height: 222px;" class="card-img-top" [src]="imagem" alt="Card image cap">
     <div class="container">
         <div class="card-body" align="center">
@@ -13,12 +13,12 @@
             </button>
     
             <div class="div-icons">
-                <span style="margin-right: 0.5rem;">
+                <span *ngIf="!!starNumber" style="margin-right: 0.5rem;">
                     <i class="fa fa-star fa-1x"></i>
                     <span>{{ starNumber }}</span>
                 </span>
     
-                <span>
+                <span *ngIf="!!forkNumber">
                     <i class="fa fa-code-fork fa-1x"></i>
                     <span>{{ forkNumber }}</span>
                 </span>

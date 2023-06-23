@@ -7,6 +7,7 @@ import { CardComponent } from './components/card/card.component';
 import { SocialNetworkLinkComponent } from './components/social-network-link/social-network-link.component';
 import { PortfolioComponent } from '../core/pages/portfolio/portfolio.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
+import { RepoService } from '../services/repo.service';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { PaginationComponent } from './components/pagination/pagination.componen
   exports: [
     NavbarComponent,
     CardComponent,
-    SocialNetworkLinkComponent
+    SocialNetworkLinkComponent,
+    PaginationComponent
   ]
 })
 export class SharedModule { }

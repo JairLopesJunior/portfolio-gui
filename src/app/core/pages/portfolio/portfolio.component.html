@@ -4,35 +4,10 @@
     </div>
 </div>
 
-<div style="display: flex; justify-content: center;" class="mt-4">
-    <div style="display: flex; align-items: flex-end; margin-right: 1rem;">
-        <nav aria-label="Navegação de página exemplo">
-            <ul class="pagination justify-content-end" style="margin: 0;">
-                <li class="page-item" [ngClass]="{'disabled': pageNumber === 1}">
-                    <a class="page-link" (click)="getReposPerPage(pageNumber - 1)">Anterior</a>
-                </li>
-                <li *ngFor="let page of pages, let index" class="page-item" [ngClass]="{'active': pageNumber === index}">
-                    <a class="page-link" (click)="getReposPerPage(index)">
-                        {{ page }}
-                    </a>
-                </li>
-                <li class="page-item" [ngClass]="{'disabled': pageNumber === 5}">
-                    <a class="page-link" (click)="getReposPerPage(pageNumber + 1)">Próximo</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    <div style="display: flex; flex-direction: column;">
-        <p style="color: white; margin-bottom: 0.2rem;">Ir para página</p>
-        <div class="input-group">
-            <input style="width: 1rem;" #inputValue type="text" class="form-control">
-            <div class="input-group-append">
-              <button class="input-group-text" (click)="getReposPerPage(inputValue.value)">Ir</button>
-            </div>
-        </div>
-    </div>
-</div>
+<app-pagination
+    [pages]="pages"
+    (reposOnChange)="getReposPagination($event)"
+></app-pagination>
 
 <!-- Cards -->
 <div class="row mt-2">
@@ -53,32 +28,7 @@
     </div>
 </div>
 
-<div style="display: flex; justify-content: center;">
-    <div style="display: flex; align-items: flex-end; margin-right: 1rem;">
-        <nav aria-label="Navegação de página exemplo">
-            <ul class="pagination justify-content-end" style="margin: 0;">
-                <li class="page-item" [ngClass]="{'disabled': pageNumber === 1}">
-                    <a class="page-link" (click)="getReposPerPage(pageNumber - 1)">Anterior</a>
-                </li>
-                <li *ngFor="let page of pages, let index" class="page-item" [ngClass]="{'active': pageNumber === index}">
-                    <a class="page-link" (click)="getReposPerPage(index)">
-                        {{ page }}
-                    </a>
-                </li>
-                <li class="page-item" [ngClass]="{'disabled': pageNumber === 5}">
-                    <a class="page-link" (click)="getReposPerPage(pageNumber + 1)">Próximo</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    <div style="display: flex; flex-direction: column;">
-        <p style="color: white; margin-bottom: 0.2rem;">Ir para página</p>
-        <div class="input-group">
-            <input style="width: 1rem;" #inputValue type="text" class="form-control">
-            <div class="input-group-append">
-              <button class="input-group-text" (click)="getReposPerPage(inputValue.value)">Ir</button>
-            </div>
-        </div>
-    </div>
-</div>
+<app-pagination
+    [pages]="pages"
+    (reposOnChange)="getReposPagination($event)"
+></app-pagination>

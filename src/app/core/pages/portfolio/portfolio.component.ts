@@ -1,6 +1,5 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RepoService } from 'src/app/services/repo.service';
-import { map } from 'rxjs/operators';
 import { Repos } from 'src/app/models/repos.model';
 
 @Component({
@@ -10,11 +9,7 @@ import { Repos } from 'src/app/models/repos.model';
 })
 export class PortfolioComponent implements OnInit {
 
-  @ViewChild('inputValue', { static: false }) inputValue: ElementRef;
-
   repos: Repos[] = [];
-
-  pageNumber: number = 1;
 
   pages = [1, 2, 3, 4, 5];
 
@@ -49,22 +44,7 @@ export class PortfolioComponent implements OnInit {
     });
   }
 
-  public getReposPerPage(page: number): void {
-    page = Number(page);
-    if (page < 1 || page > 5) {
-      alert("Número inválido.");
-      this.inputValue.nativeElement.value = "";
-      return;
-    }
-    this._repoService.getCityRegistered(page).subscribe({
-      next: (response: Repos[]) => {
-        this.pageNumber = page;
-        console.log(this.pageNumber);
-        this.repos = response;
-        this.inputValue.nativeElement.value = "";
-      },
-      error: (err: any) => {
-      }
-    });
+  public getReposPagination(evt: Repos[]): void {
+    this.repos = evt;
   }
 }

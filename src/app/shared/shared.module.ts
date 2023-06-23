@@ -6,13 +6,15 @@ import { HomeComponent } from '../core/pages/home/home.component';
 import { CardComponent } from './components/card/card.component';
 import { SocialNetworkLinkComponent } from './components/social-network-link/social-network-link.component';
 import { PortfolioComponent } from '../core/pages/portfolio/portfolio.component';
+import { PaginationComponent } from './components/pagination/pagination.component';
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
     CardComponent,
-    SocialNetworkLinkComponent
+    SocialNetworkLinkComponent,
+    PaginationComponent
   ],
   imports: [
     CommonModule,

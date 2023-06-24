@@ -23,7 +23,8 @@ import { CurriculoComponent } from './curriculo/curriculo.component';
   exports: [
     HomeComponent,
     PortfolioComponent,
-    QuemSouComponent
+    QuemSouComponent,
+    CurriculoComponent
   ]
 })
 export class PagesModule { }

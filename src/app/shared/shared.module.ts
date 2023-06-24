@@ -9,6 +9,7 @@ import { SocialNetworkLinkComponent } from './components/social-network-link/soc
 import { PortfolioComponent } from '../core/pages/portfolio/portfolio.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
+import { CurriculoComponent } from '../core/pages/curriculo/curriculo.component';
 
 
 @NgModule({
@@ -26,10 +27,13 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
         path: '', component: HomeComponent
       },
       {
-        path: 'portfolio', component: PortfolioComponent
+        path: 'quem-sou', component: QuemSouComponent
       },
       {
-        path: 'quem-sou', component: QuemSouComponent
+        path: 'curriculo', component: CurriculoComponent
+      },
+      {
+        path: 'portfolio', component: PortfolioComponent
       }
     ])
   ],

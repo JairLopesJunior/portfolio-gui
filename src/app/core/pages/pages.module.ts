@@ -20,7 +20,8 @@ import { QuemSouComponent } from './quem-sou/quem-sou.component';
   ],
   exports: [
     HomeComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    QuemSouComponent
   ]
 })
 export class PagesModule { }

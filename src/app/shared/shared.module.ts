@@ -1,3 +1,4 @@
+import { QuemSouComponent } from './../core/pages/quem-sou/quem-sou.component';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
@@ -25,6 +26,9 @@ import { RepoService } from '../services/repo.service';
       },
       {
         path: 'portfolio', component: PortfolioComponent
+      },
+      {
+        path: 'quem-sou', component: QuemSouComponent
       }
     ])
   ],

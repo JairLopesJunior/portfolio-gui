@@ -4,11 +4,7 @@ h1 {
     margin: 0;
 }
 
-h2 {
-    color: #FCF198;
-}
-
-h5 {
+h2, h5 {
     color: #FCF198;
 }
 

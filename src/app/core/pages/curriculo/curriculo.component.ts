@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CurriculoComponent implements OnInit {
 
+  images = [
+    "assets/download.jpeg",
+    "assets/download.jpeg",
+    "assets/download.jpeg",
+    ];
+
   constructor() { }
 
   ngOnInit(): void {

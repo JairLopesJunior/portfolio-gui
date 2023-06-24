@@ -3,3 +3,34 @@
        <h1 class="underline">CURRÍCULO</h1>
     </div>
 </div>
+
+<div class="row justify-content-center">
+    <div style="text-align: center; margin-top: 3vh">
+       <h3 class="underline">EDUCAÇÃO</h3>
+    </div>
+</div>
+
+<div class="container justify-content-center text-center mt-5">
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-4" *ngFor="let image of images"><a href="#"><img [src]="image" class="img-fluid"></a></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col-4" *ngFor="let image of images"><a href="#"><img [src]="image" class="img-fluid"></a></div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>

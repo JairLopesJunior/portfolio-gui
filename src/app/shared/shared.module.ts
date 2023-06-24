@@ -10,6 +10,7 @@ import { PortfolioComponent } from '../core/pages/portfolio/portfolio.component'
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { CurriculoComponent } from '../core/pages/curriculo/curriculo.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { CurriculoComponent } from '../core/pages/curriculo/curriculo.component'
     CardComponent,
     SocialNetworkLinkComponent,
     PaginationComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,

@@ -7,7 +7,6 @@ import { RouterModule } from '@angular/router';
 import { QuemSouComponent } from './quem-sou/quem-sou.component';
 import { CurriculoComponent } from './curriculo/curriculo.component';
 
-
 @NgModule({
   declarations: [
     HomeComponent,

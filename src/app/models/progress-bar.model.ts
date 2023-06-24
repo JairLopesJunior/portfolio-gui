@@ -1,4 +1,4 @@
 export class ProgressBar {
-    valuenow?: number;
     titulo?: string;
+    valuenow?: number;
 }

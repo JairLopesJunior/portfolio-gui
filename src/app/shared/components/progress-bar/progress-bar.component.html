@@ -1,14 +1,16 @@
-<label>{{ titulo }}</label>
-<div class="progress">
-    <div
-        class="progress-bar progress-bar-striped progress-bar-animated"
-        role="progressbar"
-        [style.width.%]="valuenow"
-        [class.bg-danger]="valuenow <= 33"
-        [class.bg-warning]="valuenow <= 66"
-        [class.bg-success]="valuenow <= 100"
-        aria-valuenow="valuenow"
-        aria-valuemin="valuemin"
-        aria-valuemax="valuemax"
-    >{{ valuenow }}%</div>
+<div style="margin: 10px;">
+    <label>{{ titulo }}</label>
+    <div class="progress">
+        <div
+            class="progress-bar progress-bar-striped progress-bar-animated"
+            role="progressbar"
+            [style.width.%]="valuenow"
+            [class.bg-danger]="valuenow <= 33"
+            [class.bg-warning]="valuenow <= 66"
+            [class.bg-success]="valuenow <= 100"
+            aria-valuenow="valuenow"
+            aria-valuemin="valuemin"
+            aria-valuemax="valuemax"
+        >{{ valuenow }}%</div>
+    </div>
 </div>

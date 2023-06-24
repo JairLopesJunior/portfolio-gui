@@ -22,11 +22,12 @@
 <div class="row mt-3">
     <div
       class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4"
+      *ngFor="let item of progressBarItems"
       style="padding: 0px;"
     >
     <app-progress-bar
-        [valuenow]="80"
-        [titulo]="'JAVA'"
+        [valuenow]="item.valuenow"
+        [titulo]="item.titulo"
     >
     </app-progress-bar>
     </div>

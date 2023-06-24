@@ -44,7 +44,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     CardComponent,
     SocialNetworkLinkComponent,
     PaginationComponent,
-    ProgressBarComponent
+    ProgressBarComponent,
+    CarouselComponent
   ]
 })
 export class SharedModule { }

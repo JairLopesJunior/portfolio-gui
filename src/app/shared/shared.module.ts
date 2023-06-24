@@ -9,6 +9,7 @@ import { SocialNetworkLinkComponent } from './components/social-network-link/soc
 import { PortfolioComponent } from '../core/pages/portfolio/portfolio.component';
 import { PaginationComponent } from './components/pagination/pagination.component';
 import { RepoService } from '../services/repo.service';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { RepoService } from '../services/repo.service';
     NavbarComponent,
     CardComponent,
     SocialNetworkLinkComponent,
-    PaginationComponent
+    PaginationComponent,
+    ProgressBarComponent
   ],
   imports: [
     CommonModule,

@@ -7,9 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  @Input() images: any;
+  @Input() items: any;
 
   @Input() id: string;
+
+  activeIndex = 0;
 
   constructor() { }
 

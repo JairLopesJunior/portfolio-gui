@@ -6,7 +6,6 @@
   padding: 0;
 }
 
-
 .body {
   padding: 1rem;
   display: flex;
@@ -22,9 +21,13 @@ h5 {
 }
 
 p {
-  display: flex;
   align-items: center;
   font-family: Englebert;
+  margin-bottom: auto;
+  margin-top: auto;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
 }
 
 .card-title {
@@ -33,8 +36,22 @@ p {
   color: white;
 }
 
-.carousel-item img {
-  height: auto;
-  object-fit: cover;
+::ng-deep .custom-prev-button {
+  background-color: #B96E1F;
+  border: none;
+  position: relative;
+  z-index: 1;
 }
 
+::ng-deep .custom-prev-button:focus {
+  outline: none;
+}
+
+::ng-deep .carousel-control-custom-icon {
+  color: white;
+}
+
+
+ul {
+  width: 100%;
+}

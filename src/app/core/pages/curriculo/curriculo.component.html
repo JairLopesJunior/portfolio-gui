@@ -4,7 +4,7 @@
     </div>
 </div>
 
-<div style="display: flex; justify-content: space-around; margin-top: 3vh;">
+<div style="display: flex; justify-content: space-around; margin-top: 5vh;">
     <div>
         <div class="row justify-content-center">
             <div style="text-align: center;">
@@ -13,7 +13,7 @@
         </div>
         
         <app-carousel
-            [images]="images"
+            [items]="educationItems"
             [id]="'carouselEducation'"
         >
         </app-carousel>
@@ -27,7 +27,7 @@
         </div>
         
         <app-carousel
-            [images]="images"
+            [items]="experienceItems"
             [id]="'carouselExperience'"
         >
         </app-carousel>

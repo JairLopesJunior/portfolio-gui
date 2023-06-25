@@ -23,6 +23,11 @@
                                             <p *ngIf="!!item.institution" style="margin-left: 1rem;">{{ item.institution }}</p>
                                             <p *ngIf="!!item.address" style="margin-left: 0.5rem;">{{ item.address }}</p>
                                         </li>
+
+                                        <li class="d-flex mb-2">
+                                            <i *ngIf="!!item.office" class="fa fa-user-tie fa-2x mt-1" aria-hidden="true"></i>
+                                            <p *ngIf="!!item.office" style="margin-left: 0.5rem;">{{ item.office }}</p>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>

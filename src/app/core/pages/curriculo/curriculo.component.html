@@ -4,26 +4,32 @@
     </div>
 </div>
 
-<div class="row justify-content-center">
-    <div style="text-align: center; margin-top: 3vh">
-       <h4 class="underline">EDUCAÇÃO</h4>
+<div style="display: flex; justify-content: space-around; margin-top: 3vh;">
+    <div>
+        <div class="row justify-content-center">
+            <div style="text-align: center;">
+               <h4 class="underline">EDUCAÇÃO</h4>
+            </div>
+        </div>
+        
+        <app-carousel
+            [images]="images"
+            [id]="'carouselEducation'"
+        >
+        </app-carousel>
+    </div>
+
+    <div>
+        <div class="row justify-content-center">
+            <div style="text-align: center;">
+               <h4 class="underline">EXPERIÊNCIA</h4>
+            </div>
+        </div>
+        
+        <app-carousel
+            [images]="images"
+            [id]="'carouselExperience'"
+        >
+        </app-carousel>
     </div>
 </div>
-
-<app-carousel
-    [images]="images"
-    [id]="'carouselEducation'"
->
-</app-carousel>
-
-<div class="row justify-content-center">
-    <div style="text-align: center; margin-top: 3vh">
-       <h4 class="underline">EXPERIÊNCIA</h4>
-    </div>
-</div>
-
-<app-carousel
-    [images]="images"
-    [id]="'carouselExperience'"
->
-</app-carousel>

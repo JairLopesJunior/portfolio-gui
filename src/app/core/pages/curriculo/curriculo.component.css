@@ -23,3 +23,23 @@ h4 {
     width: 80%;
     border-bottom: 4px solid #FCF198;
 }
+
+.div-pai {
+    display: flex; 
+    justify-content: space-around; 
+    margin-top: 5vh;
+}
+
+@media (max-width: 1186px) {
+    .div-pai {
+        display: flow-root;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+    
+    h4 {
+        font-size: 2rem;
+    }
+}

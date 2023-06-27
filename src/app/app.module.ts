@@ -1,3 +1,4 @@
+import { NotifierOptions, NotifierModule } from 'angular-notifier';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -6,7 +7,6 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './core/pages/pages.module';
-import { NotifierModule, NotifierOptions } from 'angular-notifier';
 
 const customNotifierOptions: NotifierOptions = {
   position: {
@@ -61,7 +61,7 @@ const customNotifierOptions: NotifierOptions = {
     PagesModule,
     NotifierModule.withConfig(customNotifierOptions)
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

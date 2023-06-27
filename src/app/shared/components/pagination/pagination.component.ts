@@ -1,7 +1,7 @@
+import { NotifierService } from 'angular-notifier';
 import { Component, OnInit, ElementRef, Input, ViewChild, Output, EventEmitter } from '@angular/core';
 import { Repos } from 'src/app/models/repos.model';
 import { RepoService } from 'src/app/services/repo.service';
-import { NotifierService } from 'angular-notifier';
 
 @Component({
   selector: 'app-pagination',

@@ -11,6 +11,7 @@ import { PaginationComponent } from './components/pagination/pagination.componen
 import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 import { CurriculoComponent } from '../core/pages/curriculo/curriculo.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { ContatoComponent } from '../core/pages/contato/contato.component';
 
 
 @NgModule({
@@ -36,6 +37,9 @@ import { CarouselComponent } from './components/carousel/carousel.component';
       },
       {
         path: 'portfolio', component: PortfolioComponent
+      },
+      {
+        path: 'contato', component: ContatoComponent
       }
     ])
   ],

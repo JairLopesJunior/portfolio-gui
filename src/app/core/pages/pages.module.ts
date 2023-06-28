@@ -6,13 +6,15 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { RouterModule } from '@angular/router';
 import { QuemSouComponent } from './quem-sou/quem-sou.component';
 import { CurriculoComponent } from './curriculo/curriculo.component';
+import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     PortfolioComponent,
     QuemSouComponent,
-    CurriculoComponent
+    CurriculoComponent,
+    ContatoComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { CurriculoComponent } from './curriculo/curriculo.component';
     HomeComponent,
     PortfolioComponent,
     QuemSouComponent,
-    CurriculoComponent
+    CurriculoComponent,
+    ContatoComponent
   ]
 })
 export class PagesModule { }

@@ -43,3 +43,29 @@ h4 {
         font-size: 2rem;
     }
 }
+
+.div-button {
+    display: flex; 
+    justify-content: center;
+}
+
+.div-button > button {
+    width: 12rem; 
+    border-radius: 1rem; 
+    background-color: #B98045; 
+    border-color: transparent; 
+    color: #FCF198; 
+    font-size: 1.3rem; 
+    padding: 0.2rem;
+}
+
+.div-button > button:hover {
+    width: 12.1rem; 
+    background-color: #FCF198; 
+    border: 2px solid #B98045; 
+    color: #B98045; 
+}
+
+.div-button > button > span {
+    margin-right: 1rem;
+}

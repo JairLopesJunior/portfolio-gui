@@ -1,0 +1,19 @@
+h1 {
+    color: #FCF198;
+    font-size: 5vw;
+    margin: 0;
+}
+
+.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 10%;
+    width: 80%;
+    border-bottom: 4px solid #FCF198;
+}

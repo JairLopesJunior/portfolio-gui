@@ -7,6 +7,10 @@
   padding: 0;
 }
 
+.body:hover {
+  background-color: rgba(255, 230, 128, 0.5);
+}
+
 .body {
   padding: 1rem;
   display: flex;

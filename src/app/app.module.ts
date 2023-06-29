@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './core/pages/pages.module';
+import { InputTextComponent } from './share/components/input-text/input-text.component';
 
 const customNotifierOptions: NotifierOptions = {
   position: {
@@ -51,7 +52,8 @@ const customNotifierOptions: NotifierOptions = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    InputTextComponent
   ],
   imports: [
     BrowserModule,

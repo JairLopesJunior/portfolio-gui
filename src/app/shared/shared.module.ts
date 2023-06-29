@@ -13,6 +13,7 @@ import { ProgressBarComponent } from './components/progress-bar/progress-bar.com
 import { CurriculoComponent } from '../core/pages/curriculo/curriculo.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ContatoComponent } from '../core/pages/contato/contato.component';
+import { InputTextComponent } from './components/input-text/input-text.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ContatoComponent } from '../core/pages/contato/contato.component';
     SocialNetworkLinkComponent,
     PaginationComponent,
     ProgressBarComponent,
-    CarouselComponent
+    CarouselComponent,
+    InputTextComponent
   ],
   imports: [
     CommonModule,
@@ -51,7 +53,8 @@ import { ContatoComponent } from '../core/pages/contato/contato.component';
     SocialNetworkLinkComponent,
     PaginationComponent,
     ProgressBarComponent,
-    CarouselComponent
+    CarouselComponent,
+    InputTextComponent
   ]
 })
 export class SharedModule { }

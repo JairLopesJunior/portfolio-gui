@@ -3,3 +3,39 @@
        <h1 class="underline">CONTATO</h1>
     </div>
 </div>
+
+<form class="row g-3">
+    <div class="col-6">
+        <app-input-text
+        [label]="'Nome'"
+        [id]="'nameId'"
+        [control]="'name'"
+        [isRequired]="true"
+        [type]="'text'"
+      ></app-input-text>
+    </div>
+
+    <div class="col-6">
+      <app-input-text
+        [label]="'Email'"
+        [id]="'emailId'"
+        [control]="'email'"
+        [isRequired]="true"
+        [type]="'email'"
+      ></app-input-text>
+    </div>
+
+    <div class="col-12">
+        <app-input-text
+          [label]="'Assunto'"
+          [id]="'subjectId'"
+          [control]="'subject'"
+          [isRequired]="true"
+          [type]="'text'"
+        ></app-input-text>
+    </div>
+
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+    </div>
+</form>

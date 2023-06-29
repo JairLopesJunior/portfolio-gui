@@ -13,20 +13,20 @@
                                         <li class="d-flex mb-2">
                                             <i *ngIf="!!item.course" class="fa fa-graduation-cap fa-2x mt-1" aria-hidden="true"></i>
                                             <i *ngIf="!!item.company" class="fa fa-building fa-2x mt-1" aria-hidden="true"></i>
-                                            <p *ngIf="!!item.course" style="margin-left: 0.5rem;">{{ item.course }}</p>
-                                            <p *ngIf="!!item.company" style="margin-left: 0.5rem;">{{ item.company }}</p>
+                                            <p *ngIf="!!item.course" style="margin-left: 0.5rem;" ngbTooltip="{{ item.course }}">{{ item.course }}</p>
+                                            <p *ngIf="!!item.company" style="margin-left: 0.5rem;" ngbTooltip="{{ item.company }}">{{ item.company }}</p>
                                         </li>
 
                                         <li class="d-flex mb-2">
                                             <i *ngIf="!!item.institution" class="fa fa-institution fa-2x mt-1" aria-hidden="true"></i>
                                             <i *ngIf="!!item.address" class="fa fa-map-marker-alt fa-2x mt-1" aria-hidden="true"></i>
-                                            <p *ngIf="!!item.institution" style="margin-left: 1rem;">{{ item.institution }}</p>
-                                            <p *ngIf="!!item.address" style="margin-left: 0.5rem;">{{ item.address }}</p>
+                                            <p *ngIf="!!item.institution" style="margin-left: 1rem;" ngbTooltip="{{ item.institution }}">{{ item.institution }}</p>
+                                            <p *ngIf="!!item.address" style="margin-left: 0.5rem;" ngbTooltip="{{ item.address }}">{{ item.address }}</p>
                                         </li>
 
                                         <li class="d-flex mb-2">
                                             <i *ngIf="!!item.office" class="fa fa-user-tie fa-2x mt-1" aria-hidden="true"></i>
-                                            <p *ngIf="!!item.office" style="margin-left: 0.5rem;">{{ item.office }}</p>
+                                            <p *ngIf="!!item.office" style="margin-left: 0.5rem;" ngbTooltip="{{ item.office }}">{{ item.office }}</p>
                                         </li>
                                     </ul>
                                 </div>

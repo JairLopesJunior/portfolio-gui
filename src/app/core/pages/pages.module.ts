@@ -1,3 +1,4 @@
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
@@ -19,7 +20,8 @@ import { ContatoComponent } from './contato/contato.component';
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule
+    RouterModule,
+    NgbModule
   ],
   exports: [
     HomeComponent,

@@ -1,3 +1,4 @@
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { QuemSouComponent } from './../core/pages/quem-sou/quem-sou.component';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
@@ -41,7 +42,8 @@ import { ContatoComponent } from '../core/pages/contato/contato.component';
       {
         path: 'contato', component: ContatoComponent
       }
-    ])
+    ]),
+    NgbModule
   ],
   exports: [
     NavbarComponent,

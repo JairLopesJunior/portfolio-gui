@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './core/pages/pages.module';
+import { NgbTooltipModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 const customNotifierOptions: NotifierOptions = {
   position: {
@@ -59,7 +60,9 @@ const customNotifierOptions: NotifierOptions = {
     HttpClientModule,
     SharedModule,
     PagesModule,
-    NotifierModule.withConfig(customNotifierOptions)
+    NotifierModule.withConfig(customNotifierOptions),
+    NgbTooltipModule,
+    NgbModule
   ],
   providers: [ ],
   bootstrap: [AppComponent],

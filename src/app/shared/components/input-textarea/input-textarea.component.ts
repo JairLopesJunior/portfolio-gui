@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-input-textarea',
@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputTextareaComponent implements OnInit {
 
-  constructor() { }
+  @Input() id: string = "";
+
+  @Input() control: string = "";
+
+  @Input() label: string = "";
+
+  @Input() rows: number = 3;
+
+  @Input() isRequired: boolean = false;
+
+  constructor(private _elementRef: ElementRef) { }
 
   ngOnInit(): void {
   }
 
+  ngAfterViewInit() {
+    if (this.isRequired) {
+      const labelElement: HTMLLabelElement = this._elementRef.nativeElement.querySelector('label');
+      labelElement.innerHTML += ' *';
+    }
+  }
 }

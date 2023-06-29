@@ -56,7 +56,8 @@ import { InputTextareaComponent } from './components/input-textarea/input-textar
     PaginationComponent,
     ProgressBarComponent,
     CarouselComponent,
-    InputTextComponent
+    InputTextComponent,
+    InputTextareaComponent
   ]
 })
 export class SharedModule { }

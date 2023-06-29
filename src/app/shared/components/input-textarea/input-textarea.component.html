@@ -1,1 +1,8 @@
-<p>input-textarea works!</p>
+<label class="col-sm-2 col-form-label">{{ label }}</label>
+<textarea 
+    class="form-control" 
+    [id]="id"
+    formControlName="control"
+    [rows]="rows"
+    [required]="isRequired"
+></textarea>

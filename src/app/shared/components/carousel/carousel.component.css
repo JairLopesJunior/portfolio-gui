@@ -7,10 +7,6 @@
   padding: 0;
 }
 
-.body:hover {
-  background-color: rgba(255, 230, 128, 0.5);
-}
-
 .body {
   padding: 1rem;
   display: flex;
@@ -33,6 +29,7 @@ p {
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
+  cursor: pointer;
 }
 
 .card-title {

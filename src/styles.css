@@ -13,7 +13,7 @@ body {
 }
 
 body {
-    background-color: #5E4429;
+    background-color: #5E4429 !important;
     border-top: 0.5rem solid #B98045;
     border-right: 0.5rem solid #B98045;
     border-left: 0.5rem solid #B98045;

@@ -14,6 +14,7 @@ import { CurriculoComponent } from '../core/pages/curriculo/curriculo.component'
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ContatoComponent } from '../core/pages/contato/contato.component';
 import { InputTextComponent } from './components/input-text/input-text.component';
+import { InputTextareaComponent } from './components/input-textarea/input-textarea.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { InputTextComponent } from './components/input-text/input-text.component
     PaginationComponent,
     ProgressBarComponent,
     CarouselComponent,
-    InputTextComponent
+    InputTextComponent,
+    InputTextareaComponent
   ],
   imports: [
     CommonModule,

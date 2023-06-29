@@ -17,7 +17,7 @@
 
     <div class="col-6">
       <app-input-text
-        [label]="'Email'"
+        [label]="'E-mail'"
         [id]="'emailId'"
         [control]="'email'"
         [isRequired]="true"
@@ -33,6 +33,16 @@
           [isRequired]="true"
           [type]="'text'"
         ></app-input-text>
+    </div>
+
+    <div class="col-12">
+        <app-input-textarea
+          [label]="'Mensagem'"
+          [id]="'messageId'"
+          [control]="'message'"
+          [isRequired]="true"
+          [type]="'textarea'"
+        ></app-input-textarea>
     </div>
 
     <div class="col-auto">

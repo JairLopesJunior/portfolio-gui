@@ -4,47 +4,68 @@
     </div>
 </div>
 
-<form class="row g-3">
-    <div class="col-6">
-        <app-input-text
-        [label]="'Nome'"
-        [id]="'nameId'"
-        [control]="'name'"
-        [isRequired]="true"
-        [type]="'text'"
-      ></app-input-text>
+<div class="body mt-5">
+    <div class="left-side">
+        <div class="icon-container mb-5">
+          <i class="fas fa-phone fa-3x icon"></i>
+          <span class="description">(19) 99999 - 99999</span>
+        </div>
+
+        <div class="icon-container mb-5">
+          <i class="fas fa-envelope fa-3x icon"></i>
+          <span class="description">JAIR.LOPES@FATEC.SP.GOV.BR</span>
+        </div>
+
+        <div class="icon-container">
+          <i class="fas fa-map-marker-alt fa-3x icon"></i>
+          <span class="description">ARARAS - SP</span>
+        </div>
     </div>
 
-    <div class="col-6">
-      <app-input-text
-        [label]="'E-mail'"
-        [id]="'emailId'"
-        [control]="'email'"
-        [isRequired]="true"
-        [type]="'email'"
-      ></app-input-text>
+    <div class="right-side">
+      <form class="row g-3">
+        <div class="col-6">
+            <app-input-text
+            [label]="'Nome'"
+            [id]="'nameId'"
+            [control]="'name'"
+            [isRequired]="true"
+            [type]="'text'"
+          ></app-input-text>
+        </div>
+    
+        <div class="col-6">
+          <app-input-text
+            [label]="'E-mail'"
+            [id]="'emailId'"
+            [control]="'email'"
+            [isRequired]="true"
+            [type]="'email'"
+          ></app-input-text>
+        </div>
+    
+        <div class="col-12">
+            <app-input-text
+              [label]="'Assunto'"
+              [id]="'subjectId'"
+              [control]="'subject'"
+              [isRequired]="true"
+              [type]="'text'"
+            ></app-input-text>
+        </div>
+    
+        <div class="col-12">
+            <app-input-textarea
+              [label]="'Mensagem'"
+              [id]="'messageId'"
+              [control]="'message'"
+              [isRequired]="true"
+            ></app-input-textarea>
+        </div>
+    
+        <div class="send-button col-auto">
+          <button class="btn btn-primary mb-3">ENVIAR</button>
+        </div>
+    </form>
     </div>
-
-    <div class="col-12">
-        <app-input-text
-          [label]="'Assunto'"
-          [id]="'subjectId'"
-          [control]="'subject'"
-          [isRequired]="true"
-          [type]="'text'"
-        ></app-input-text>
-    </div>
-
-    <div class="col-12">
-        <app-input-textarea
-          [label]="'Mensagem'"
-          [id]="'messageId'"
-          [control]="'message'"
-          [isRequired]="true"
-        ></app-input-textarea>
-    </div>
-
-    <div class="col-auto">
-      <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
-    </div>
-</form>
+</div>

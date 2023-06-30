@@ -17,3 +17,63 @@ h1 {
     width: 80%;
     border-bottom: 4px solid #FCF198;
 }
+
+.body {
+    display: flex;
+    flex-direction: row;
+}
+
+.body > div:first-child,
+.body > div:last-child {
+    padding: 1rem !important;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side {
+    flex: 1;
+    align-items: center;
+}
+
+.send-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.send-button > button {
+    width: 8rem; 
+    border-radius: 1rem; 
+    background-color: #B98045; 
+    border-color: transparent; 
+    color: #FCF198; 
+    font-size: 1.3rem; 
+    padding: 0.2rem;
+}
+
+.send-button > button:hover {
+    width: 8.1rem; 
+    background-color: #FCF198; 
+    border: 2px solid #B98045; 
+    color: #B98045; 
+}
+
+.icon-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.icon {
+    margin-right: 0.8rem !important;
+    color: white;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: white;
+}

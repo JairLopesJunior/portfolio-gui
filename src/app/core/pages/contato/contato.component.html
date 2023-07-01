@@ -28,43 +28,59 @@
         class="row g-3"
         (ngSubmit)="onSubmit()"
       >
-        <div class="col-6 form-group">
+        <div class="col-6 form-group" [ngClass]="applyCssErro('name')">
           <app-input-text
             [label]="'Nome'"
             [id]="'nameId'"
-            [control]="'name'"
+            [control]="formContato.get('name')"
             [isRequired]="true"
             [type]="'text'"
           ></app-input-text>
+          <app-field-control-erro
+            [mostrarErro]="validTouched('name')"
+            msgErro="Nome é obrigatório."
+          ></app-field-control-erro>
         </div>
     
-        <div class="col-6 form-group">
+        <div class="col-6 form-group" [ngClass]="applyCssErro('email')">
           <app-input-text
             [label]="'E-mail'"
             [id]="'emailId'"
-            [control]="'email'"
+            [control]="formContato.get('email')"
             [isRequired]="true"
             [type]="'email'"
           ></app-input-text>
+          <app-field-control-erro
+            [mostrarErro]="validTouched('email')"
+            msgErro="E-mail é obrigatório."
+          ></app-field-control-erro>
         </div>
     
-        <div class="col-12 form-group">
+        <div class="col-12 form-group" [ngClass]="applyCssErro('subject')">
             <app-input-text
               [label]="'Assunto'"
               [id]="'subjectId'"
-              [control]="'subject'"
+              [control]="formContato.get('subject')"
               [isRequired]="true"
               [type]="'text'"
             ></app-input-text>
+            <app-field-control-erro
+              [mostrarErro]="validTouched('subject')"
+              msgErro="Assunto é obrigatório."
+            ></app-field-control-erro>
         </div>
     
-        <div class="col-12 form-group">
+        <div class="col-12 form-group" [ngClass]="applyCssErro('message')">
             <app-input-textarea
               [label]="'Mensagem'"
               [id]="'messageId'"
-              [control]="'message'"
+              [control]="formContato.get('message')"
               [isRequired]="true"
             ></app-input-textarea>
+            <app-field-control-erro
+              [mostrarErro]="validTouched('message')"
+              msgErro="Mensagem é obrigatório."
+            ></app-field-control-erro>
         </div>
     
         <div class="send-button col-auto">

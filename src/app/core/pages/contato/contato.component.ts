@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { NotifierService } from 'angular-notifier';
 
 @Component({
   selector: 'app-contato',
@@ -10,7 +11,10 @@ export class ContatoComponent implements OnInit {
 
   formContato: FormGroup;
 
-  constructor(private _fb: FormBuilder) { }
+  constructor(private _fb: FormBuilder,
+              private _notifierService: NotifierService) {
+    this._notifierService = _notifierService;
+  }
 
   ngOnInit(): void {
     this.formGroupContato();
@@ -46,7 +50,21 @@ export class ContatoComponent implements OnInit {
   }
 
   onSubmit(): void {
-    this.formContato.markAllAsTouched();
-    console.log(this.formContato);
+    if(this.formContato.invalid) {
+      this.formContato.markAllAsTouched();
+      this._notifierService.notify('error', 'Campos obrigatórios não informados.');
+    }
+  }
+
+  applyCssErro(campo: any): any {
+    return {
+      'has-error': this.validTouched(campo),
+      'has-feedback': this.validTouched(campo)
+    };
+  }
+
+  validTouched(campo: string): boolean {
+    return !this.formContato.get(campo)?.valid 
+    && this.formContato.get(campo)?.touched;
   }
 }

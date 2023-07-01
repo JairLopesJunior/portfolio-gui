@@ -2,7 +2,8 @@
 <textarea 
     class="form-control" 
     [id]="id"
-    formControlName="control"
+    [attr.formControlName]="control"
     [rows]="rows"
     [required]="isRequired"
+    [class.ng-invalid]="control.invalid && control.touched"
 ></textarea>

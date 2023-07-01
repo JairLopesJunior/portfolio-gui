@@ -1,8 +1,9 @@
 <label class="col-sm-2 col-form-label">{{ label }}</label>
 <input 
     [type]="type" 
-    class="form-control"
+    [class]="class"
     [id]="id"
     [attr.formControlName]="control"
     [required]="isRequired"
+    [class.ng-invalid]="control.invalid && control.touched"
 >

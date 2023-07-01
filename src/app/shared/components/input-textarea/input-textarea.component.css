@@ -2,3 +2,7 @@ label {
     color: white;
     white-space: nowrap;
 }
+
+.ng-invalid {
+    border: 1px solid red;
+}

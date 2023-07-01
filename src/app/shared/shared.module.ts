@@ -15,6 +15,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { ContatoComponent } from '../core/pages/contato/contato.component';
 import { InputTextComponent } from './components/input-text/input-text.component';
 import { InputTextareaComponent } from './components/input-textarea/input-textarea.component';
+import { FieldControlErroComponent } from './components/field-control-erro/field-control-erro.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { InputTextareaComponent } from './components/input-textarea/input-textar
     ProgressBarComponent,
     CarouselComponent,
     InputTextComponent,
-    InputTextareaComponent
+    InputTextareaComponent,
+    FieldControlErroComponent
   ],
   imports: [
     CommonModule,
@@ -57,7 +59,8 @@ import { InputTextareaComponent } from './components/input-textarea/input-textar
     ProgressBarComponent,
     CarouselComponent,
     InputTextComponent,
-    InputTextareaComponent
+    InputTextareaComponent,
+    FieldControlErroComponent
   ]
 })
 export class SharedModule { }

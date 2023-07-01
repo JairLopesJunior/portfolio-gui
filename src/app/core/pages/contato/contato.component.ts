@@ -46,6 +46,7 @@ export class ContatoComponent implements OnInit {
   }
 
   onSubmit(): void {
+    this.formContato.markAllAsTouched();
     console.log(this.formContato);
   }
 }

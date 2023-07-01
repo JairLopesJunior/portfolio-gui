@@ -21,3 +21,12 @@ h2, h5 {
     width: 80%;
     border-bottom: 4px solid #FCF198;
 }
+
+a {
+    display: pointer;
+    color: #87CEEB;
+}
+
+b {
+    color: #b96e1f;
+}

@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { QuemSouComponent } from './quem-sou/quem-sou.component';
 import { CurriculoComponent } from './curriculo/curriculo.component';
 import { ContatoComponent } from './contato/contato.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,9 @@ import { ContatoComponent } from './contato/contato.component';
     CommonModule,
     SharedModule,
     RouterModule,
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
     HomeComponent,

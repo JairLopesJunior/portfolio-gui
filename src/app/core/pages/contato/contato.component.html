@@ -23,9 +23,13 @@
     </div>
 
     <div class="right-side">
-      <form class="row g-3">
-        <div class="col-6">
-            <app-input-text
+      <form 
+        [formGroup]="formContato" 
+        class="row g-3"
+        (ngSubmit)="onSubmit()"
+      >
+        <div class="col-6 form-group">
+          <app-input-text
             [label]="'Nome'"
             [id]="'nameId'"
             [control]="'name'"
@@ -34,7 +38,7 @@
           ></app-input-text>
         </div>
     
-        <div class="col-6">
+        <div class="col-6 form-group">
           <app-input-text
             [label]="'E-mail'"
             [id]="'emailId'"
@@ -44,7 +48,7 @@
           ></app-input-text>
         </div>
     
-        <div class="col-12">
+        <div class="col-12 form-group">
             <app-input-text
               [label]="'Assunto'"
               [id]="'subjectId'"
@@ -54,7 +58,7 @@
             ></app-input-text>
         </div>
     
-        <div class="col-12">
+        <div class="col-12 form-group">
             <app-input-textarea
               [label]="'Mensagem'"
               [id]="'messageId'"

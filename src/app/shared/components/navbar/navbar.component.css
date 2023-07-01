@@ -69,3 +69,23 @@ a {
         color: #ff7f00;
     }
 }
+
+.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 4px;
+    background-color: #b98045;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .underline:hover::after {
+    width: 100%;
+  }

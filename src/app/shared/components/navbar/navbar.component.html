@@ -6,32 +6,50 @@
     </button>
     
     <a [routerLink]="''" routerLinkActive='active' class="navbar-brand" style="margin-left: 2rem;">
-        JL
+        <span class="underline">
+            <b>JL</b>
+        </span>
     </a>
 
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" [ngClass]="{ 'show': navbarOpen }">
 
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a [routerLink]="['quem-sou']" routerLinkActive='active' class="nav-link"><b>QUEM SOU</b></a>
+                <a [routerLink]="['quem-sou']" routerLinkActive='active' class="nav-link">
+                    <span class="underline">
+                        <b>QUEM SOU</b>
+                    </span>
+                </a>
             </li>
         </ul>
 
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a [routerLink]="['curriculo']" routerLinkActive='active' class="nav-link"><b>CV</b></a>
+                <a [routerLink]="['curriculo']" routerLinkActive='active' class="nav-link">
+                    <span class="underline">
+                        <b>CV</b>
+                    </span>
+                </a>
             </li>
         </ul>
 
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a [routerLink]="['portfolio']" routerLinkActive='active' class="nav-link"><b>PORTFÓLIO</b></a>
+                <a [routerLink]="['portfolio']" routerLinkActive='active' class="nav-link">
+                    <span class="underline">
+                        <b>PORTFÓLIO</b>
+                    </span>
+                </a>
             </li>
         </ul>
 
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a [routerLink]="['contato']" routerLinkActive='active' class="nav-link"><b>CONTATO</b></a>
+                <a [routerLink]="['contato']" routerLinkActive='active' class="nav-link">
+                    <span class="underline">
+                        <b>CONTATO</b>
+                    </span>
+                </a>
             </li>
         </ul>
     </div>

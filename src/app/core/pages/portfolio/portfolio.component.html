@@ -5,8 +5,10 @@
 </div>
 
 <app-pagination
+    #pagination
     [pages]="pages"
     (reposOnChange)="getReposPagination($event)"
+    (getCurrentPage)="getCurrentPage($event)"
 ></app-pagination>
 
 <!-- Cards -->
@@ -29,6 +31,8 @@
 </div>
 
 <app-pagination
+    #paginationTwo
     [pages]="pages"
     (reposOnChange)="getReposPagination($event)"
+    (getCurrentPage)="getCurrentPage($event)"
 ></app-pagination>

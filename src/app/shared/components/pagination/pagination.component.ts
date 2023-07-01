@@ -16,6 +16,8 @@ export class PaginationComponent implements OnInit {
 
   @Output() reposOnChange: EventEmitter<Repos[]> = new EventEmitter<Repos[]>();
 
+  @Output() getCurrentPage: EventEmitter<number> = new EventEmitter<number>();
+
   pageNumber: number = 1;
 
   constructor(private _repoService: RepoService,
@@ -35,6 +37,7 @@ export class PaginationComponent implements OnInit {
     }
     this._repoService.getCityRegistered(page).subscribe({
       next: (response: Repos[]) => {
+        this.getCurrentPage.emit(page);
         this._notifierService.notify('success', 'Busca efetuada com sucesso.');
         this.pageNumber = page;
         this.reposOnChange.emit(response);
@@ -43,5 +46,9 @@ export class PaginationComponent implements OnInit {
       error: (err: any) => {
       }
     });
+  }
+
+  setCurrentPage(page: number): void {
+    this.pageNumber = page;
   }
 }

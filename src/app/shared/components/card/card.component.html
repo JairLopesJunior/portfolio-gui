@@ -3,7 +3,7 @@
     <div class="container">
         <div class="card-body" align="center">
             <ng-content></ng-content>
-            <h5 *ngIf="!!title" class="card-title" style="width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden;">{{ title }}</h5>
+            <h5 *ngIf="!!title" ngbTooltip="{{ title }}" class="card-title" style="width: 100%; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; cursor: pointer;">{{ title }}</h5>
             <p *ngIf="!!relato" class="card-text">{{ relato }}</p>
         </div>
     

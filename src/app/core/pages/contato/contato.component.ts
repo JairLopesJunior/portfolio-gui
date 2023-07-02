@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { NotifierService } from 'angular-notifier';
 
 @Component({
@@ -22,35 +22,37 @@ export class ContatoComponent implements OnInit {
 
   formGroupContato(): void {
     this.formContato = this._fb.group({
-      name: ['', Validators.compose([
+      name: ['', [
           Validators.required,
           Validators.maxLength(100),
           Validators.minLength(5)
-        ])
+        ]
       ],
-      email: ['', Validators.compose([
+      email: ['', [
           Validators.required,
           Validators.maxLength(100),
-          Validators.minLength(10)
-        ])
+          Validators.minLength(10),
+          Validators.email
+        ]
       ],
-      subject: ['', Validators.compose([
+      subject: ['', [
           Validators.required,
           Validators.maxLength(100),
           Validators.minLength(5)
-        ])
+        ]
       ],
-      message: ['', Validators.compose([
+      message: ['', [
           Validators.required,
           Validators.maxLength(500),
           Validators.minLength(10)
-        ])
+        ]
       ],
     });
   }
 
   onSubmit(): void {
     if(this.formContato.invalid) {
+      console.log(this.formContato);
       this.formContato.markAllAsTouched();
       this._notifierService.notify('error', 'Campos obrigatórios não informados.');
     }

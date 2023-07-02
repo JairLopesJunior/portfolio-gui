@@ -16,6 +16,7 @@ import { ContatoComponent } from '../core/pages/contato/contato.component';
 import { InputTextComponent } from './components/input-text/input-text.component';
 import { InputTextareaComponent } from './components/input-textarea/input-textarea.component';
 import { FieldControlErroComponent } from './components/field-control-erro/field-control-erro.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { FieldControlErroComponent } from './components/field-control-erro/field
         path: 'contato', component: ContatoComponent
       }
     ]),
-    NgbModule
+    NgbModule,
+    ReactiveFormsModule
   ],
   exports: [
     NavbarComponent,

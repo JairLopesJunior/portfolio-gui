@@ -1,42 +1,44 @@
-<div class="row justify-content-center">
-    <div style="text-align: center; margin-top: 2vh">
-       <h1 class="underline">CURRÍCULO</h1>
-    </div>
-</div>
-
-<div class="div-pai">
-    <div>
-        <div class="row justify-content-center">
-            <div style="text-align: center;">
-               <h4 class="underline">EDUCAÇÃO</h4>
-            </div>
+<div class="row" style="height: 80vh; display: flex !important; justify-content: center !important; vertical-align: middle !important; align-content: center !important;">
+    <div class="row justify-content-center">
+        <div style="text-align: center; margin-top: 2vh">
+           <h1 class="underline">CURRÍCULO</h1>
         </div>
-        
-        <app-carousel
-            [items]="educationItems"
-            [id]="'carouselEducation'"
-        >
-        </app-carousel>
     </div>
-
-    <div>
-        <div class="row justify-content-center">
-            <div style="text-align: center;">
-               <h4 class="underline">EXPERIÊNCIA</h4>
+    
+    <div class="div-pai">
+        <div>
+            <div class="row justify-content-center">
+                <div style="text-align: center;">
+                   <h4 class="underline">EDUCAÇÃO</h4>
+                </div>
             </div>
+            
+            <app-carousel
+                [items]="educationItems"
+                [id]="'carouselEducation'"
+            >
+            </app-carousel>
         </div>
-        
-        <app-carousel
-            [items]="experienceItems"
-            [id]="'carouselExperience'"
-        >
-        </app-carousel>
+    
+        <div>
+            <div class="row justify-content-center">
+                <div style="text-align: center;">
+                   <h4 class="underline">EXPERIÊNCIA</h4>
+                </div>
+            </div>
+            
+            <app-carousel
+                [items]="experienceItems"
+                [id]="'carouselExperience'"
+            >
+            </app-carousel>
+        </div>
     </div>
-</div>
-
-<div class="row div-button mt-5">
-    <button type="button" class="btn btn-outline-secondary me-2" (click)="generateFile()">
-        <span>BAIXAR CV</span>
-        <i class="fas fa-file-alt"></i>
-    </button>
+    
+    <div class="row div-button mt-5">
+        <button type="button" class="btn btn-outline-secondary me-2" (click)="generateFile()">
+            <span>BAIXAR CV</span>
+            <i class="fas fa-file-alt"></i>
+        </button>
+    </div>
 </div>

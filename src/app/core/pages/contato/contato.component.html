@@ -1,75 +1,77 @@
-<div class="row justify-content-center">
-    <div style="text-align: center; margin-top: 2vh">
+<div class="row" style="height: 80vh; display: flex !important; justify-content: center !important; vertical-align: middle !important; align-content: center !important;">
+  <div class="row justify-content-center">
+    <div style="text-align: center">
        <h1 class="underline">CONTATO</h1>
     </div>
-</div>
+  </div>
 
-<div class="body mt-5">
-    <div class="left-side">
-        <div class="icon-container mb-5">
-          <i class="fas fa-phone fa-3x icon"></i>
-          <span class="description">(19) 99999 - 99999</span>
-        </div>
+  <div class="body mt-5">
+      <div class="left-side">
+          <div class="icon-container mb-5">
+            <i class="fas fa-phone fa-3x icon"></i>
+            <span class="description">(19) 99999 - 99999</span>
+          </div>
 
-        <div class="icon-container mb-5">
-          <i class="fas fa-envelope fa-3x icon"></i>
-          <span class="description">JAIR.LOPES@FATEC.SP.GOV.BR</span>
-        </div>
+          <div class="icon-container mb-5">
+            <i class="fas fa-envelope fa-3x icon"></i>
+            <span class="description">JAIR.LOPES@FATEC.SP.GOV.BR</span>
+          </div>
 
-        <div class="icon-container">
-          <i class="fas fa-map-marker-alt fa-3x icon"></i>
-          <span class="description">ARARAS - SP</span>
-        </div>
-    </div>
+          <div class="icon-container">
+            <i class="fas fa-map-marker-alt fa-3x icon"></i>
+            <span class="description">ARARAS - SP</span>
+          </div>
+      </div>
 
-    <div class="right-side">
-      <form 
-        [formGroup]="formContato" 
-        class="row g-3"
-        (ngSubmit)="onSubmit()"
-      >
-        <div class="col-6">
-          <app-input-text
-            [label]="'Nome'"
-            [id]="'name'"
-            [control]="formContato.get('name')"
-            [isRequired]="true"
-            [type]="'text'"
-          ></app-input-text>
-        </div>
-    
-        <div class="col-6">
-          <app-input-text
-            [label]="'E-mail'"
-            [id]="'email'"
-            [control]="formContato.get('email')"
-            [isRequired]="true"
-            [type]="'email'"
-          ></app-input-text>
-        </div>
-    
-        <div class="col-12">
+      <div class="right-side">
+        <form 
+          [formGroup]="formContato" 
+          class="row g-3"
+          (ngSubmit)="onSubmit()"
+        >
+          <div class="col-6">
             <app-input-text
-              [label]="'Assunto'"
-              [id]="'subject'"
-              [control]="formContato.get('subject')"
+              [label]="'Nome'"
+              [id]="'name'"
+              [control]="formContato.get('name')"
               [isRequired]="true"
               [type]="'text'"
             ></app-input-text>
-        </div>
-    
-        <div class="col-12 form-group">
-            <app-input-textarea
-              [label]="'Mensagem'"
-              [id]="'message'"
-              [control]="formContato.get('message')"
+          </div>
+      
+          <div class="col-6">
+            <app-input-text
+              [label]="'E-mail'"
+              [id]="'email'"
+              [control]="formContato.get('email')"
               [isRequired]="true"
-            ></app-input-textarea>
-        </div>
-    
-        <div class="send-button col-auto">
-          <button class="btn btn-primary mb-3">ENVIAR</button>
-        </div>
-    </form>
-    </div>
+              [type]="'email'"
+            ></app-input-text>
+          </div>
+      
+          <div class="col-12">
+              <app-input-text
+                [label]="'Assunto'"
+                [id]="'subject'"
+                [control]="formContato.get('subject')"
+                [isRequired]="true"
+                [type]="'text'"
+              ></app-input-text>
+          </div>
+      
+          <div class="col-12 form-group">
+              <app-input-textarea
+                [label]="'Mensagem'"
+                [id]="'message'"
+                [control]="formContato.get('message')"
+                [isRequired]="true"
+              ></app-input-textarea>
+          </div>
+      
+          <div class="send-button col-auto">
+            <button class="btn btn-primary mb-3">ENVIAR</button>
+          </div>
+      </form>
+      </div>
+  </div>
 </div>

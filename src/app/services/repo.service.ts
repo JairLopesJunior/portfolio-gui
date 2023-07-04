@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Repos } from '../models/repos.model';
@@ -19,5 +19,11 @@ export class RepoService {
       page = 1;
     }
     return this._httpClient.get<Repos[]>(`${this.URL}?page=${page}&per_page=20`);
+  }
+
+  gerarExcel(): Observable<HttpResponse<Blob>> {
+    const headers = new HttpHeaders().set('Accept', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+
+    return this._httpClient.get('http://localhost:8080/api', { headers, observe: 'response', responseType: 'blob' });
   }
 }

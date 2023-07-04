@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Carousel } from 'src/app/models/carousel.model';
+import { PDFService } from 'src/app/services/pdf.service';
 
 @Component({
   selector: 'app-curriculo',
@@ -53,9 +54,21 @@ export class CurriculoComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(private _pdfService: PDFService) { }
 
   ngOnInit(): void {
   }
 
+  generateFile(): void {
+    this._pdfService.generateFile().subscribe((response) => {
+      this.downloadArquivo(response);
+    });
+  }
+
+  private downloadArquivo(blob: Blob) {
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'curriculo.pdf';
+    link.click();
+  }
 }

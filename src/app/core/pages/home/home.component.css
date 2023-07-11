@@ -16,3 +16,12 @@
 h1, h3, h5 {
     margin: 0;
 }
+
+img {
+    height: 23rem;
+}
+
+.content-center {
+    display: flex;
+    justify-content: center;
+}

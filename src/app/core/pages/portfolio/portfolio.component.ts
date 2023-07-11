@@ -57,17 +57,4 @@ export class PortfolioComponent implements OnInit {
     this.pagination.setCurrentPage(evt);
     this.paginationTwo.setCurrentPage(evt);
   }
-
-  gerarExcel(): void {
-    this._repoService.gerarExcel().subscribe((response) => {
-      this.downloadArquivo(response.body);
-    });
-  }
-
-  private downloadArquivo(blob: Blob) {
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = 'arquivo_excel.xlsx';
-    link.click();
-  }
 }

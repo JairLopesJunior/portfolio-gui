@@ -30,3 +30,8 @@ a {
 b {
     color: #b96e1f;
 }
+
+.partial-open {
+    max-height: 50% !important;
+    overflow: hidden;
+}

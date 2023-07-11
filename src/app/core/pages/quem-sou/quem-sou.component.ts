@@ -47,8 +47,18 @@ export class QuemSouComponent implements OnInit {
     }
   ];
 
+  isShowText: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public isShowMostrarMais(): void {
+    this.isShowText = true;
+  }
+
+  public isShowOcultar(): void {
+    this.isShowText = false;
   }
 }

@@ -35,3 +35,10 @@ b {
     max-height: 50% !important;
     overflow: hidden;
 }
+
+.ver-mais {
+    cursor: pointer;
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+}

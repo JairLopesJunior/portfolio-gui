@@ -12,23 +12,26 @@
             minha paixão em profissão. Tenho uma formação sólida, tendo concluído o curso Técnico em Informática para 
             Internet na renomada ETEC - ARARAS, e posteriormente, graduei-me em Sistemas para Internet na FATEC - ARARAS. 
             Atualmente, estou aprimorando minhas habilidades no campo de Desenvolvimento de Software Multiplataforma na mesma instituição.
-    
+
             Minha trajetória profissional em T.I começou durante a minha primeira graduação, na qual tive a oportunidade de colaborar 
             com empresas como <a target="_blank" href="https://www.varitus.com.br/">VARITUS BRASIL</a>, <a target="_blank" href="https://www.vrsoft.com.br/">VR SOFTWARE</a>, 
             <a target="_blank" href="https://www.elotech.com.br/">ELOTECH GESTÃO PÚBLICA</a>. Hoje, faço parte da talentosa equipe da <a target="_blank" href="https://www.cognizant.com/us/en">COGNIZANT</a>, 
-            onde aplico meu conhecimento e expertise para enfrentar desafios empolgantes.
-    
-            Ao longo da minha carreira, trabalhei com diversas tecnologias, tais como <b>JAVA</b>, JSF, PRIMEFACES, <b>JPA</b>, <b>HIBERNATE</b>, <b>ANGULAR</b>, 
-            <b>JAVASCRIPT</b>, <b>TYPESCRIPT</b>, NODEJS, NESTJS, TYPEORM, SEQUELIZE, SPRINGBOOT, ANGULARJS e <b>RXJS</b>&nbsp;
-            <span ngbTooltip="Atualmente estou focando nas técnologias que estão com a cor mais escura."><i style="color: white; cursor: pointer;" class="fas fa-info-circle"></i></span>.<br> 
-            Essa ampla gama de habilidades me permite abordar projetos de forma abrangente e com soluções inovadoras.
-    
-            Além da minha dedicação profissional, também sou um eterno aprendiz. Sempre busco compartilhar conhecimento e aprender com a 
-            experiência dos meus colegas. Para aprimorar ainda mais minhas habilidades, participo regularmente de cursos complementares, 
-            mantendo-me atualizado com as últimas tendências e melhores práticas do setor.
-    
-            Fora do âmbito profissional, tenho uma paixão por colecionar itens diversos. Também sou um entusiasta do cinema, adoro assistir filmes e séries. 
-            Além disso, aproveito cada oportunidade para viajar, expandindo meus horizontes e conhecendo diferentes culturas.
+            onde aplico meu conhecimento e expertise para enfrentar desafios empolgantes. <a class="ver-mais" (click)="isShowMostrarMais()" [hidden]="isShowText">MOSTRAR MAIS</a>
+
+            <span *ngIf="isShowText">        
+                Ao longo da minha carreira, trabalhei com diversas tecnologias, tais como <b>JAVA</b>, JSF, PRIMEFACES, <b>JPA</b>, <b>HIBERNATE</b>, <b>ANGULAR</b>, 
+                <b>JAVASCRIPT</b>, <b>TYPESCRIPT</b>, NODEJS, NESTJS, TYPEORM, SEQUELIZE, SPRINGBOOT, ANGULARJS e <b>RXJS</b>&nbsp;
+                <span ngbTooltip="Atualmente estou focando nas técnologias que estão com a cor mais escura."><i style="color: white; cursor: pointer;" class="fas fa-info-circle"></i></span>.<br> 
+                Essa ampla gama de habilidades me permite abordar projetos de forma abrangente e com soluções inovadoras.
+        
+                Além da minha dedicação profissional, também sou um eterno aprendiz. Sempre busco compartilhar conhecimento e aprender com a 
+                experiência dos meus colegas. Para aprimorar ainda mais minhas habilidades, participo regularmente de cursos complementares, 
+                mantendo-me atualizado com as últimas tendências e melhores práticas do setor.
+        
+                Fora do âmbito profissional, tenho uma paixão por colecionar itens diversos. Também sou um entusiasta do cinema, adoro assistir filmes e séries. 
+                Além disso, aproveito cada oportunidade para viajar, expandindo meus horizontes e conhecendo diferentes culturas.
+            </span>
+            <a class="ver-mais" (click)="isShowOcultar()" [hidden]="!isShowText">OCULTAR</a>
         </h5>
     </div>
     

@@ -36,3 +36,14 @@
     (reposOnChange)="getReposPagination($event)"
     (getCurrentPage)="getCurrentPage($event)"
 ></app-pagination>
+
+<div class="my-container">
+    <ng-template #customLoadingTemplate>
+    </ng-template>
+  
+    <ngx-loading
+      [show]="loading"
+      [config]="{ backdropBorderRadius: '3px' }"
+      [template]="customLoadingTemplate"
+    ></ngx-loading>
+</div>

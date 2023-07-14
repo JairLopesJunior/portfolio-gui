@@ -14,6 +14,8 @@ export class PortfolioComponent implements OnInit {
 
   @ViewChild('paginationTwo', { static: false }) paginationTwo: PaginationComponent;
 
+  public loading = false;
+
   repos: Repos[] = [];
 
   pages = [1, 2, 3, 4, 5];
@@ -39,13 +41,15 @@ export class PortfolioComponent implements OnInit {
   }*/
 
   public getRepos = (): void => {
+    this.loading = true;
     this._repoService.getCityRegistered()
     .subscribe({
       next: (response: Repos[]) => {
         this.repos = response;
       },
       error: (err: any) => {
-      }
+      },
+      complete: () => this.loading = false
     });
   }
 

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
 import { PagesModule } from './core/pages/pages.module';
+import { NgxLoadingModule } from 'ngx-loading';
 
 const customNotifierOptions: NotifierOptions = {
   position: {

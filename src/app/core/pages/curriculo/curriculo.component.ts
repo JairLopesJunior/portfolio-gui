@@ -54,14 +54,18 @@ export class CurriculoComponent implements OnInit {
     }
   ];
 
+  public loading = false;
+
   constructor(private _pdfService: PDFService) { }
 
   ngOnInit(): void {
   }
 
   generateFile(): void {
+    this.loading = true;
     this._pdfService.generateFile().subscribe((response) => {
       this.downloadArquivo(response);
+      this.loading = false;
     });
   }
 

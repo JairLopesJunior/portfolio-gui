@@ -5,6 +5,7 @@
 </div>
 
 <app-pagination
+    *ngIf="!loading"
     #pagination
     [pages]="pages"
     (reposOnChange)="getReposPagination($event)"
@@ -31,6 +32,7 @@
 </div>
 
 <app-pagination
+    *ngIf="!loading"
     #paginationTwo
     [pages]="pages"
     (reposOnChange)="getReposPagination($event)"

@@ -8,14 +8,11 @@
 
 html,
 body {
-    height: 100% !important;
-    margin: 0;
-}
-
-body {
+    height: auto !important;
     background-color: #5E4429 !important;
-    border-top: 0.5rem solid #B98045;
-    border-right: 0.5rem solid #B98045;
-    border-left: 0.5rem solid #B98045;
+    border-top: 0.2rem solid #B98045;
+    border-right: 0.2rem solid #B98045;
+    border-left: 0.2rem solid #B98045;
     border-bottom: 0px;
+    margin: 0;
 }
